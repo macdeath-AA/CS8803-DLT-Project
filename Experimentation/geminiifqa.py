@@ -17,8 +17,6 @@ for prompt in prompts:
     response = model.generate_content(mod_prompt, request_options={'timeout':300})
     responses.append(response.text)
 
-# df_output = df.iloc[:5].copy()
-# df_output['response'] = responses
 df['response'] = responses
 
 output_file = 'geminianswers.csv'

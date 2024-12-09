@@ -73,7 +73,7 @@ if __name__ == "__main__":
     
     config = load_config(config_path)
     
-    # set seeds
+   
     torch.manual_seed(config["seed"])
     np.random.seed(config["seed"])
     torch.cuda.manual_seed_all(config["seed"])
